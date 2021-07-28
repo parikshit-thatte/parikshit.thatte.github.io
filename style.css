@@ -1,0 +1,153 @@
+body {
+    margin: 0px;
+}
+
+header {
+    padding: 60px;
+    text-align: center;
+    font-size: 44px;
+    text-shadow: 0px 2px 2px #706565;
+    background-color:rgb(159, 159, 250);
+    
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row; 
+    background-color: #27658a;
+}
+
+.navbar a {
+    /* display: inline-block; */
+    color:rgb(255, 255, 255) ;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 20px;
+  }
+
+.navbar a:hover {
+    background-color:#132449;
+}
+
+@media screen and (max-width:786px) {
+    .navbar {
+        flex-direction: column;
+        position: static;
+    }
+
+    .my-projects {
+        flex-direction: column;
+    }
+
+    .pl {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .fw {
+        flex-direction: column;
+    }
+
+    .connect-with-me {
+        flex-direction: column;
+    }
+}
+
+
+.content {  
+    display: flex;
+}
+
+.about-me {
+    flex: 20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+  
+/* Main column */
+.main {
+    flex: 80%;
+    background-color: white;
+    padding: 20px;
+}
+
+.my-projects {
+    display: flex;
+    align-items: flex-start;
+}
+
+.project-1 {
+    flex: 33%;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.project-2 {
+    flex: 33%;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.project-3 {
+    flex: 33%;
+    padding: 10px;
+    list-style-type: none;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.pl, .fw {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pl li, .fw li {
+    list-style-type:none;
+}
+
+#my-photo {
+    justify-content: center;
+    width: 170px;
+    height: 150px;
+}
+
+.connect-with-me {
+    display: flex;
+    justify-content: space-between;
+}
+
+.connect-with-me-item {
+    list-style-type: none;
+    flex: 33%;
+}
+
+.connect-with-me img {
+    width: 50px;
+    height: 50px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    margin: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    background: #ddd;
+}
